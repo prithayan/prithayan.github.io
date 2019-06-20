@@ -9,7 +9,17 @@
  In <em>IWOMP 2019, OpenMP: Conquering the Full Hardware Spectrum</em>,
   2019.
 [&nbsp;<a href="{{ include.url }}#1909117">bib</a>&nbsp;]
-
+<blockquote><font size="-1">
+OpenMP offers directives for offloading computations from
+  CPU hosts to accelerator devices such as GPUs. A key underlying challenge is in efficiently managing the movement of data across the host
+  and the accelerator. User experiences have shown that memory management in OpenMP programs with offloading capabilities is non-trivial and
+  error-prone.
+  This paper presents OMPSan (OpenMP Sanitizer)  a static analysisbased tool that helps developers detect bugs from incorrect usage of the
+  map clause, and also suggests potential fixes for the bugs. We have developed an LLVM based data flow analysis that validates if the def-use
+  information of the array variables are respected by the mapping constructs in the OpenMP program. We evaluate OmpSan over some standard benchmarks and also show its effectiveness by detecting commonly
+  reported bugs.
+</font></blockquote>
+<p>
 </li>
 
 <li class="bib" id="8735529">
@@ -40,7 +50,12 @@ We present a language and compilation framework for productively generating high
 [&nbsp;<a href="{{ include.url }}#Barua:2018:CTC:3243176.3243196">bib</a>&nbsp;| 
 <a href="http://dx.doi.org/10.1145/3243176.3243196">DOI</a>&nbsp;| 
 <a href="http://doi.acm.org/10.1145/3243176.3243196">http</a>&nbsp;]
-
+<blockquote><font size="-1">
+Directive-based programming models like OpenACC provide a higher level abstraction and low overhead approach of porting existing applications to GPGPUs and other heterogeneous HPC hardware. Such programming models increase the design space exploration possible at the compiler level to exploit specific features of different architectures. We observed that traditional applications designed for latency optimized out-of-order pipelined CPUs do not exploit the throughput optimized in-order pipelined GPU architecture efficiently. In this paper we develop a model to estimate the memory throughput of a given application. Then we use the loop interleave transformation to improve the memory bandwidth utilization of a given kernel.<p>
+    We developed a heuristic to estimate the optimal loop interleave factor, and implemented it in the OpenARC compiler for OpenACC. We evaluated our approach on over 216 kernels to achieve a Geo-mean speedup of 1.32×.<p>
+      Our compiler optimization aims to provide the right balance between performance, portability and productivity.
+</font></blockquote>
+<p>
 </li>
 
 <li class="bib" id="1902.06570">
@@ -50,7 +65,11 @@ We present a language and compilation framework for productively generating high
  2019.
 [&nbsp;<a href="{{ include.url }}#1902.06570">bib</a>&nbsp;| 
 <a href="http://arxiv.org/abs/arXiv:1902.06570">arXiv</a>&nbsp;]
-
+<blockquote><font size="-1">
+Modern software systems heavily use C/C++ based libraries. Because of the weak memory model of C/C++, libraries may suffer from vulnerabilities which can expose the applications to potential attacks. For example, a very large number of return oriented programming gadgets exist in glibc that allow stitching together semantically valid but malicious Turing-complete programs. In spite of significant advances in attack detection and mitigation, full defense is unrealistic against an ever-growing set of possibilities for generating such malicious programs. 
+  In this work, we create a defense mechanism by debloating libraries to reduce the dynamic functions linked so that the possibilities of constructing malicious programs diminishes significantly. The key idea is to locate each library call site within an application, and in each case to load only the set of library functions that will be used at that call site. This approach of demand-driven loading relies on an input-aware oracle that predicts a near-exact set of library functions needed at a given call site during the execution. The predicted functions are loaded just in time, and the complete call chain (of function bodies) inside the library is purged after returning from the library call back into the application. We present a decision-tree based predictor, which acts as an oracle, and an optimized runtime system, which works directly with library binaries like GNU libc and libstdc++. We show that on average, the proposed scheme cuts the exposed code surface of libraries by 97.2%, reduces ROP gadgets present in linked libraries by 97.9%, achieves a prediction accuracy in most cases of at least 97%, and adds a small runtime overhead of 18% on all libraries (16% for glibc, 2% for others) across all benchmarks of SPEC 2006, suggesting this scheme is practical.
+</font></blockquote>
+<p>
 </li>
 
 <li class="bib" id="10.1007/978-3-642-13365-7_9">
