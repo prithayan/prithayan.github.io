@@ -1,9 +1,10 @@
-# Tiago Cogumbreiro's scholar web page
+# Prithayan Barua scholar web page
 
-Feel free to branch and alter this website.
 
-* website: http://cogumbreiro.github.io/
-* source code: https://github.com/cogumbreiro/cogumbreiro.github.io
+Copied the template from Tiago Cogumbreiro, feel free to branch and alter this website.
+
+* website: http://prithayan.github.io/
+* Original source code: https://github.com/cogumbreiro/cogumbreiro.github.io
 
 This website is ready to be used by [GitHub.Pages](http://pages.github.com/),
 but some of its content must be generated before commiting. See the workflow for more info. This way you can edit its content from anywhere in the world just using
