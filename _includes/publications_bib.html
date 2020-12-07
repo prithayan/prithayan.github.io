@@ -1,18 +1,38 @@
 <div class="bib" id="Europar2020"><pre>
 @inproceedings{<a href="{{ include.url }}#Europar2020">Europar2020</a>,
-  author = {Prithayan Barua and Jisheng Zhao and Santosh Pande},
-  title = {OmpOptiMem: Optimized Memory Movement for Heterogeneous Computing},
-  series = {To appear EuroPar 2020},
-  year = {Aug 2020}
+  author = {Barua, Prithayan
+and Zhao, Jisheng
+and Sarkar, Vivek},
+  editor = {Malawski, Maciej
+and Rzadca, Krzysztof},
+  title = {OmpMemOpt: Optimized Memory Movement for Heterogeneous Computing},
+  booktitle = {Euro-Par 2020: Parallel Processing},
+  year = {2020},
+  publisher = {Springer International Publishing},
+  address = {Cham},
+  pages = {200--216},
+  abstract = {The fast development of acceleration architectures and applications has made heterogeneous computing the norm for high-performance computing. The cost of high volume data movement to the accelerators is an important bottleneck both in terms of application performance and developer productivity. Memory management is still a manual task performed tediously by expert programmers. In this paper, we develop a compiler analysis to automate memory management for heterogeneous computing. We propose an optimization framework that casts the problem of detection and removal of redundant data movements into a partial redundancy elimination (PRE) problem and applies the lazy code motion technique to optimize these data movements. We chose OpenMP as the underlying parallel programming model and implemented our optimization framework in the LLVM toolchain. We evaluated it with ten benchmarks and obtained a geometric speedup of 2.3{\$}{\$}{\backslash}times {\$}{\$}, and reduced on average 50{\%} of the total bytes transferred between the host and GPU.},
+  isbn = {978-3-030-57675-2}
 }
 </pre></div>
 
 <div class="bib" id="PLDI2020"><pre>
 @inproceedings{<a href="{{ include.url }}#PLDI2020">PLDI2020</a>,
-  author = {Chris Porter and Girish Mururu and Prithayan Barua and Santosh Pande},
+  author = {Porter, Chris and Mururu, Girish and Barua, Prithayan and Pande, Santosh},
   title = {BlankIt Library Debloating: Getting What You Want Instead of Cutting What You Don’t},
-  series = {To appear PLDI 2020},
-  year = {June 2020}
+  year = {2020},
+  isbn = {9781450376136},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3385412.3386017},
+  doi = {10.1145/3385412.3386017},
+  abstract = {Modern software systems make extensive use of libraries derived from C and C++. Because of the lack of memory safety in these languages, however, the libraries may suffer from vulnerabilities, which can expose the applications to potential attacks. For example, a very large number of return-oriented programming gadgets exist in glibc that allow stitching together semantically valid but malicious Turing-complete and -incomplete programs. While CVEs get discovered and often patched and remedied, such gadgets serve as building blocks of future undiscovered attacks, opening an ever-growing set of possibilities for generating malicious programs. Thus, significant reduction in the quantity and expressiveness (utility) of such gadgets for libraries is an important problem. In this work, we propose a new approach for handling an application’s library functions that focuses on the principle of “getting only what you want.” This is a significant departure from the current approaches that focus on “cutting what is unwanted.” Our approach focuses on activating/deactivating library functions on demand in order to reduce the dynamically linked code surface, so that the possibilities of constructing malicious programs diminishes substantially. The key idea is to load only the set of library functions that will be used at each library call site within the application at runtime. This approach of demand-driven loading relies on an input-aware oracle that predicts a near-exact set of library functions needed at a given call site during the execution. The predicted functions are loaded just in time and unloaded on return. We present a decision-tree based predictor, which acts as an oracle, and an optimized runtime system, which works directly with library binaries like GNU libc and libstdc++. We show that on average, the proposed scheme cuts the exposed code surface of libraries by 97.2%, reduces ROP gadgets present in linked libraries by 97.9%, achieves a prediction accuracy in most cases of at least 97%, and adds a runtime overhead of 18% on all libraries (16% for glibc, 2% for others) across all benchmarks of SPEC 2006. Further, we demonstrate BlankIt on two real-world applications, sshd and nginx, with a high amount of debloating and low overheads.},
+  booktitle = {Proceedings of the 41st ACM SIGPLAN Conference on Programming Language Design and Implementation},
+  pages = {164–180},
+  numpages = {17},
+  keywords = {program security, software debloating},
+  location = {London, UK},
+  series = {PLDI 2020}
 }
 </pre></div>
 
